@@ -1,5 +1,7 @@
 sudo: required
 language: ruby
+git:
+  depth: 2
 
 services:
   - docker
