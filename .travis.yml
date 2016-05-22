@@ -1,0 +1,12 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+
+script:
+  - docker build -t earvin/rethinkdb .
+  - docker images -a
+#  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+#  - docker push earvin/rethinkdb
