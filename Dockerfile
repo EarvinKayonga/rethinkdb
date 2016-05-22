@@ -1,6 +1,6 @@
 FROM  debian:jessie
 ENV   RETHINKDB_VERSION 2.3.2
-ENV   BRANCH            v2.3.x
+ENV   BRANCH            next
 
 #
 #   DEPENDENCIES
@@ -32,7 +32,7 @@ RUN   git checkout $BRANCH
 RUN   ./configure --with-system-malloc --allow-fetch --fetch node  --fetch openssl --fetch npm  --dynamic jemalloc
 RUN   make clean
 RUN   make build-openssl
-RUN   make -j 50 ALLOW_WARNINGS=1
+RUN   make -j 6 ALLOW_WARNINGS=1
 RUN   make install
 
 #
