@@ -29,10 +29,10 @@ RUN   git checkout $BRANCH
 
 
 #      cd rethinkdb
-RUN   ./configure --with-system-malloc --allow-fetch --fetch node  --fetch openssl --fetch npm   --dynamic jemalloc
+RUN   ./configure --with-system-malloc --allow-fetch --fetch node  --fetch openssl --fetch npm  --dynamic jemalloc
 RUN   make clean
 RUN   make build-openssl
-RUN   make -j 10 ALLOW_WARNINGS=1
+RUN   make -j 50 ALLOW_WARNINGS=1
 RUN   make install
 
 #
