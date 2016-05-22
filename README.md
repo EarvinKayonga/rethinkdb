@@ -1,14 +1,27 @@
-# RethinkDb from SOURCES in a Docker Container
+# RethinkDB from code source in a Docker Container
 
+## 2 ways to Enjoy:
 
-To build and run:
+### Pulling images from Docker Hub (Recommended)
 
 ```
-docker build -t earvin/rethinkdb .
+docker pull earvin/rethinkdb:latest #(optional)
 mkdir data
-docker run -t db -d -p 8080:8080 -v data:/data rethinkdb-src
+docker run -t db -d -p 8080:8080 -v data:/data earvin/rethinkdb:latest
+
 ```
 
-Requirements:
+### Git Clone, building and running
 
-Have Docker Installed
+```
+git clone rethinkdb
+cd rethinkdb
+mkdir /data
+docker build -t earvin/rethinkdb .
+docker run -t db -d -p 8080:8080 -v data:/data earvin/rethinkdb
+
+```
+
+#### Requirements:
+
+ * **Have Docker Installed**
