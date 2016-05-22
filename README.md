@@ -15,6 +15,8 @@ docker run -t db -d -p 8080:8080 -v data:/data earvin/rethinkdb:latest
 
 ### Git Clone, building and running
 
+30 minutes of compilation though
+
 ```
 git clone git@github.com:EarvinKayonga/rethinkdb.git rethinkdb
 cd rethinkdb
