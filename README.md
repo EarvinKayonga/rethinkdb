@@ -22,7 +22,7 @@ git clone git@github.com:EarvinKayonga/rethinkdb.git rethinkdb
 cd rethinkdb
 mkdir /data
 docker build -t earvin/rethinkdb .
-docker run -t db -d -p 8080:8080 -v data:/data earvin/rethinkdb
+docker run -t db -d -p 8080:8080 28015:28015 29015:29015 -v data:/data earvin/rethinkdb
 
 ```
 
