@@ -32,7 +32,7 @@ mkdir /data
 docker build -t earvin/rethinkdb .
 
 docker run              \
---restart=always          \
+--restart=always        \
 --name db               \
 -d                      \
 -p 8080:8080            \
