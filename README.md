@@ -10,6 +10,7 @@ Docker Hub Repo: [https://hub.docker.com/r/earvin/rethinkdb/](https://hub.docker
 docker pull earvin/rethinkdb:latest #(optional)
 mkdir data
 docker run                \
+--restart=always          \
 --name db                 \
 -d                        \
 -p 8080:8080              \
@@ -31,6 +32,7 @@ mkdir /data
 docker build -t earvin/rethinkdb .
 
 docker run              \
+--restart=always          \
 --name db               \
 -d                      \
 -p 8080:8080            \

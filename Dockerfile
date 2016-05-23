@@ -1,4 +1,7 @@
 FROM  debian:jessie
+MAINTAINER Earvin Kayonga <earvin@earvinkayonga.com>
+
+
 ENV   RETHINKDB_VERSION 2.3.2
 ENV   BRANCH            next
 
