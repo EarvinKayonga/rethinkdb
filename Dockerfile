@@ -32,7 +32,7 @@ RUN   git checkout $BRANCH
 RUN   ./configure --with-system-malloc --allow-fetch --fetch node  --fetch openssl --fetch npm  --dynamic jemalloc
 RUN   make clean
 RUN   make build-openssl
-RUN   make -j 2 ALLOW_WARNINGS=1
+RUN   make -j 4 ALLOW_WARNINGS=1
 RUN   make install
 
 #
