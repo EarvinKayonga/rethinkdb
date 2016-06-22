@@ -3,7 +3,7 @@ MAINTAINER Earvin Kayonga <earvin@earvinkayonga.com>
 
 
 ENV   RETHINKDB_VERSION 2.3.2
-ENV   BRANCH            next
+ENV   BRANCH            v2.3.x
 
 #
 #   DEPENDENCIES
