@@ -1,9 +1,9 @@
-FROM  debian:jessie
+FROM  debian:jessie-slim
 MAINTAINER Earvin Kayonga <earvin@earvinkayonga.com>
 
 
-ENV   RETHINKDB_VERSION 2.3.2
-ENV   BRANCH            v2.3.x
+ENV   RETHINKDB_VERSION 2.3.5
+ENV   BRANCH            v2.4.x
 
 #
 #   DEPENDENCIES
